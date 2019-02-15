@@ -82,8 +82,6 @@ module.exports = {
         before(app) {
             let arr = [
                 '/form-json-response.json',
-                '/filters-response-price.json',
-                '/catalog-response-price.json'
             ];
             for (let i = 0; i < arr.length; i++) {
                 app.post(arr[i], function(req, res) {
