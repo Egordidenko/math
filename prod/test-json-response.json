@@ -1,0 +1,12 @@
+{"status":"success", "total-price":"2 100 <div class='roub'> P</div>", "total-goods": "5 товаров", "goods": [
+    {
+      "name": "Тенисное платье",
+      "img": "http://olimpstar.ru/upload/iblock/41f/122773_0001_m_front_primary_asics_jpg.jpg",
+      "size": "s",
+      "color": "#fff",
+      "qt": "5",
+      "price": "2 100 <div class='roub'> P</div>",
+      "key": "id-3"
+    }
+  ]
+}
