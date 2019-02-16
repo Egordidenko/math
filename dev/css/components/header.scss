@@ -41,7 +41,10 @@
   opacity: 0;
   background: rgba(0, 0, 3, .9);
   z-index: -1;
-  transition: opacity .375s ease-out;
+  transform-origin: right top;
+  transform: translateY(-90%);
+  transition: opacity .45s ease-in, transform .35s ease;
+
 
   @media screen and (min-width: 1000px) {
     display: none;
@@ -52,8 +55,10 @@
     justify-content: center;
     align-items: center;
     opacity: 1;
-    transition: opacity .25s ease-in;
+    transform: translateY(0);
+    transition: opacity .45s ease-in, transform .35s ease;
     z-index: 3;
+
   }
 
   &-wrapper {

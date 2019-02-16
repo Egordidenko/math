@@ -115,9 +115,7 @@ let init = function() {
 
 
     dispatcher.subscribe(function(e) {
-        console.log(e)
         if (e.type === 'mutate') {
-
             _handleMutate();
             _handleChange();
         }
