@@ -30,3 +30,62 @@
   letter-spacing: .4em;
   text-transform: uppercase;
 }
+
+
+.info {
+  &__main {
+    display: grid;
+    grid-gap: 3%;
+  }
+  &__block {
+    display: grid;
+    grid-gap: 2%;
+    &:nth-child(2n+1) {
+      grid-template-columns: 1fr 1.5fr 1fr;
+    }
+    &:nth-child(2n) {
+      grid-template-columns: 2fr 1.5fr 1fr;
+    }
+  }
+}
+
+.info__typography {
+  margin-bottom: rem(30px);
+}
+
+.info__main_item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #ccc;
+  overflow: hidden;
+
+  &:hover {
+    .info__main_img {
+      transform: scale(1.2);
+      transition: all .25s ease-in;
+    }
+  }
+}
+
+.info__main_picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.info__main_img {
+  transform: scale(1);
+  transition: all .25s ease-out;
+  width: 100%;
+  height: 100%;
+}
+.info__main_text {
+  position: absolute;
+  font: 700 20px/24px $Roboto;
+  color: $black;
+  bottom: rem(25px);
+  left: rem(10px);
+  text-transform: uppercase;
+}

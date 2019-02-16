@@ -8,15 +8,12 @@
   &_jsc {
     justify-content: center;
   }
-  
+  &_col {
+    flex-direction: column;
+  }
   &_slide {
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-}
-
-.wrapper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
