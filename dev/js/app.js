@@ -3,7 +3,9 @@ import style from 'style.scss';
 
 // modules
 
-domReady(function () {
+import slider from 'slider/slider.view'
 
+domReady(function () {
+    slider.init()
 });
 

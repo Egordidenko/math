@@ -5,4 +5,18 @@
   &_spbw {
     justify-content: space-between;
   }
+  &_jsc {
+    justify-content: center;
+  }
+  
+  &_slide {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.wrapper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
