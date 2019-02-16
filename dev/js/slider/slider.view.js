@@ -1,3 +1,4 @@
+import dispatcher from 'dispatcher';
 import swiper from "swiper";
 
 let items = {};
