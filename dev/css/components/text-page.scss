@@ -1,0 +1,55 @@
+
+.user-text {
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 30%);
+  }
+
+  width: calc(100% - 10%);
+  margin: 0 auto;
+
+
+  h1 {
+    text-align: center;
+    font: 300 30px/36px $Roboto;
+    letter-spacing: .015em;
+    text-transform: uppercase;
+    margin: rem(40px) rem(60px);
+  }
+
+  h2 {
+    font: 700 16px/20px $Roboto;
+    margin: rem(45px) rem(60px) rem(20px);
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  p {
+    font: 400 18px/20px $Roboto;
+    margin: rem(45px) rem(60px);
+    color: #777777;
+  }
+
+  blockquote {
+    border: 1px solid #e1e1e1;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 4px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: #c8c8c8;
+    }
+
+    p {
+      font: 700 18px/20px $PT-Serif;
+      font-style: italic;
+      margin: 0;
+      padding: rem(30px) rem(40px);
+      color: #777777;
+    }
+  }
+}
