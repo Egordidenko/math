@@ -3,11 +3,16 @@ $Roboto: 'Roboto', sans-serif;
 $PT-Serif: 'PT Serif', serif;
 
 h1, .h1 {
-  font: 300 48px/24px $Roboto;
+  font: 300 48px/50px $Roboto;
   letter-spacing: .1em;
 
   @media screen and (max-width: 1024px) {
    font-size: 36px;
+  }
+
+  @media screen and (max-width: $from-mobile) {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 h2, .h2 {

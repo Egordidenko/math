@@ -8,11 +8,14 @@ let idNum  = 1;
 
 let _handleChange = function() {
     for (let key in items) {
-
         if (items[key].id === 'main-slider') {
             let slider = new swiper(items[key].element, {
+                loop: true,
                 slidesPerView: 1,
-                grabCursor: true
+                grabCursor: true,
+                autoplay: {
+                    delay: 5000
+                }
             })
         }
     }
@@ -88,9 +91,7 @@ let init = function() {
 
 
     dispatcher.subscribe(function(e) {
-        console.log(e)
         if (e.type === 'mutate') {
-
             _handleMutate();
             _handleChange();
         }

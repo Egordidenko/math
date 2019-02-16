@@ -11,6 +11,10 @@
   display: block;
   padding-bottom: 40%;
 
+  @media screen and (max-width: $from-mobile) {
+    padding-bottom: 100%;
+  }
+
   &-item {
     position: absolute;
     left: 0;
@@ -28,9 +32,15 @@
   color: $white;
   text-transform: uppercase;
   background: black;
+  text-align: center;
+  
+  @media screen and (max-width: $from-mobile) {
+    padding: rem(10px) rem(18px);
+  }
 }
 .back-h2 {
   margin-top: rem(30px);
   letter-spacing: .4em;
   text-transform: uppercase;
+  text-align: center;
 }

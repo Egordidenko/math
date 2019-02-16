@@ -3,20 +3,48 @@ import dispatcher from 'dispatcher';
 let items = {};
 
 //!!!replace!
-let idName = 'new-id-';
+let idName = 'menu-id-';
 let idNum  = 1;
-
+let active = true;
+let html = document.documentElement;
 
 let _handleChange = function() {
     for (let key in items) {
-        items[key].element.addEventListener('click', function (e) {
+        items[key].element.addEventListener('click', function () {
+            if (active) {
+                _openMenu(key);
+                active = false;
+            } else {
+                _closeMenu(key)
+                active = true;
+            }
+        })
+    }
+    
+    function _openMenu(id) {
+        items[id].elMenu.classList.add('active');
+        items[id].element.classList.add('active');
+        html.style.overflow = 'hidden';
 
+        dispatcher.dispatch({
+            type: "active:menu"
+        })
+    }
+    function _closeMenu(id) {
+        items[id].elMenu.classList.remove('active');
+        items[id].element.classList.remove('active');
+        html.style = '';
+
+        dispatcher.dispatch({
+            type: "disactive:menu"
         })
     }
 };
 
 let _add = function(items, element) {
     let id = element.getAttribute('data-id');
+    let menu = document.querySelector('.header-media');
+    let idMenu = menu.getAttribute('data-id');
 
     if (!id) {
         id = idName + idNum;
@@ -25,7 +53,9 @@ let _add = function(items, element) {
 
     items[id] = {
         id: id,
-        element: element
+        element: element,
+        elMenu: menu,
+        idMenu: idMenu
     }
 };
 

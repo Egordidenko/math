@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <link rel="stylesheet" href="build/style.css">
+    <script>
+        var modernBrowser = (
+            'fetch' in window &&
+            'assign' in Object
+        );
+
+        if ( !modernBrowser ) {
+            var scriptElement = document.createElement('script');
+
+            scriptElement.async = false;
+            scriptElement.src = 'build/polyfills.app.js';
+            document.head.appendChild(scriptElement);
+        }
+    </script>
+</head>
+<body>
+<div class="page-wrapper">
+    <header class="header">
+        <div class="wrapper flex flex_spbw">
+            <div class="header__l">
+                <div class="logo">
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="header__r">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="faculty.html" class="link">Факультет</a></li>
+                        <li><a href="" class="link">Студентам</a></li>
+                        <li><a href="" class="link">Абитуриентам</a></li>
+                        <li><a href="" class="link">Выпускникам</a></li>
+                        <li><a href="" class="link">Преподавателям</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__m">
+                <button class="menu-open" data-menu="menu">
+                    <i class="fa"></i>
+                    <i class="fa"></i>
+                    <i class="fa"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="wrapper flex flex_spbw">
+
+        </div>
+    </footer>
+</div>
+<script src="build/index.app.js"></script>
+</body>
+</html>
