@@ -1,8 +1,19 @@
 
+.user-poster {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 45%;
+}
+
 .user-text {
 
   @media screen and (min-width: 1200px) {
-    width: calc(100% - 30%);
+    width: calc(100% - 25%);
+  }
+
+  @media screen and (max-width: $from-mobile) {
+    width: calc(100%);
   }
 
   width: calc(100% - 10%);
@@ -15,6 +26,10 @@
     letter-spacing: .015em;
     text-transform: uppercase;
     margin: rem(40px) rem(60px);
+
+    @media screen and (max-width: $from-mobile) {
+      margin: rem(20px) rem(30px);
+    }
   }
 
   h2 {
@@ -22,12 +37,20 @@
     margin: rem(45px) rem(60px) rem(20px);
     color: #333333;
     text-transform: uppercase;
+
+    @media screen and (max-width: $from-mobile) {
+      margin: rem(22.5px) rem(30px);
+    }
   }
 
   p {
     font: 400 18px/20px $Roboto;
     margin: rem(45px) rem(60px);
     color: #777777;
+
+    @media screen and (max-width: $from-mobile) {
+      margin: rem(22.5px) rem(30px);
+    }
   }
 
   blockquote {
