@@ -2,6 +2,7 @@ let webpack = require('webpack');
 let path = require('path');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
 let autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const cssnano = require('cssnano');
@@ -71,7 +72,8 @@ module.exports = {
         new webpack.ProvidePlugin({
             Swiper:  'swiper'
         }),
-        new CleanWebpackPlugin(['prod/build'])
+        new CleanWebpackPlugin(['prod/build']),
+        new HtmlWebpackPlugin()
     ],
     watch: NODE_ENV == 'development',
     watchOptions: {

@@ -1,9 +1,19 @@
 @charset "UTF-8";
 @import "reset.scss";
+
+@import "base/variables.scss";
+@import "base/mixin.scss";
+@import "base/fonts.scss";
+@import "base/config.scss";
+
+@import "components/header.scss";
+@import "components/link.scss";
+
+@import "utils.scss";
 @import "swiper.css";
 
 body {
-
+	font-size: 16px;
 }
 .page-wrapper {
 	position: relative;

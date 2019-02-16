@@ -1,0 +1,27 @@
+.link {
+  position: relative;
+  font: 700 14px/24px $Roboto;
+  letter-spacing: 0.075em;
+  color: $gray;
+  left: 0;
+  transition: left .3s ease-out;
+
+  &:hover {
+    color: $black;
+    left: 10px;
+
+    transition: all .25s ease-in;
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: -20px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 10px;
+      height: 2px;
+      background-color: $black;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &_spbw {
+    justify-content: space-between;
+  }
+}

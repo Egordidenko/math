@@ -1,0 +1,13 @@
+.header {
+  margin: rem(20px) 0;
+}
+
+.nav__list {
+  display: flex;
+
+  li {
+    &:not(:last-child) {
+      margin-right: rem(45px);
+    }
+  }
+}

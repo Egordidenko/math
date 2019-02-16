@@ -1,0 +1,12 @@
+//size
+
+.wrapper {
+  position: relative;
+  width: calc(100% - 10%);
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 20%);
+  }
+}
+
